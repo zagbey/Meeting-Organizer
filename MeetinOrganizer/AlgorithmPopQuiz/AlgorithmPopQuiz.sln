@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmPopQuiz1", "AlgorithmPopQuiz\AlgorithmPopQuiz1.csproj", "{B1BE0283-F0DA-4A64-9D7D-3288B133F8AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmPopQuiz2", "algorithm-pop-quiz-2-occurence-finder\AlgorithmPopQuiz2.csproj", "{FF8C92D5-B1E2-43F3-B913-C92258993E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1BE0283-F0DA-4A64-9D7D-3288B133F8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BE0283-F0DA-4A64-9D7D-3288B133F8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BE0283-F0DA-4A64-9D7D-3288B133F8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BE0283-F0DA-4A64-9D7D-3288B133F8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8C92D5-B1E2-43F3-B913-C92258993E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8C92D5-B1E2-43F3-B913-C92258993E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8C92D5-B1E2-43F3-B913-C92258993E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8C92D5-B1E2-43F3-B913-C92258993E33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1228F360-F131-4540-AB9A-C0C3C7D03DB8}
+	EndGlobalSection
+EndGlobal

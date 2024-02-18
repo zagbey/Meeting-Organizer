@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Organizer</title>
+</head>
+<body>
+    <h1>Meeting Organizer</h1>
+    <form id="meetingForm">
+            <label for="title">Meeting Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date"><br>
+            <label for="startTime">Start Time:</label><br>
+            <input type="time" id="startTime" name="startTime"><br>
+            <label for="endTime">End Time:</label><br>
+            <input type="time" id="endTime" name="endTime"><br>
+            <label for="participants">Participants:</label><br>
+            <input type="text" id="participants" name="participants"><br><br>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        
+    </form>
+
+    <script>
+        const form = document.getElementById('meetingForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = {
+                title: formData.get('title'),
+                date: formData.get('date'),
+                startTime: formData.get('startTime'),
+                endTime: formData.get('endTime'),
+                participants: formData.get('participants').split(',')
+            };
+
+            try {
+                const response = await fetch('/meeting', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    console.log('Meeting added successfully');
+                    form.reset();
+                } else {
+                    console.error('Failed to add meeting');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
+
